@@ -61,8 +61,8 @@
     @include nav-divider($dropdown-divider-bg);
   }
 
-  // Links within the dropdown menu
-  > li > a, span, b {
+  // Elements within the dropdown menu
+  > li > a, div, b {
     display: block;
     padding: 3px 8px;
     clear: both;
