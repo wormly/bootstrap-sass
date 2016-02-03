@@ -36,7 +36,7 @@
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: 160px;
-  padding: 5px 0;
+  padding: 0;
   margin: 2px 0 0; // override default ul
   list-style: none;
   font-size: $font-size-base;
@@ -62,14 +62,14 @@
   }
 
   // Links within the dropdown menu
-  > li > a {
+  > li > a, span, b {
     display: block;
-    padding: 3px 20px;
+    padding: 3px 8px;
     clear: both;
-    font-weight: normal;
     line-height: $line-height-base;
     color: $dropdown-link-color;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
+    font-size: $font-size-small;
   }
 }
 
@@ -81,6 +81,11 @@
     color: $dropdown-link-hover-color;
     background-color: $dropdown-link-hover-bg;
   }
+}
+
+.dropdown-menu > li.selected > a {
+    color: $dropdown-link-hover-color;
+    background-color: $dropdown-link-hover-bg;
 }
 
 // Active state
