@@ -8,8 +8,13 @@ code,
 kbd,
 pre,
 span.code,
+input.code,
 samp {
   font-family: $font-family-monospace;
+}
+
+input.code {
+  font-size: 90%;
 }
 
 // Inline code
