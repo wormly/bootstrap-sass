@@ -8,11 +8,13 @@ code,
 kbd,
 pre,
 span.code,
+textarea.code,
 input.code,
 samp {
   font-family: $font-family-monospace;
 }
 
+textarea.code,
 input.code {
   font-size: 90%;
 }
